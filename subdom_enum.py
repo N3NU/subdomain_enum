@@ -13,7 +13,7 @@ subdomains = subdomain_list.splitlines()
 for sub in subdomains:
     #Assigning the variable with FQDN
     new_subdomains = f"http://{sub}.{sys.argv[1]}"
-    print(new_subdomains)
+    
     #Check to see if new_subdomains give valid response
     try:
         requests.get(new_subdomains)
